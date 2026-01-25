@@ -10,7 +10,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
-    <meta name="theme-color" content="#62001B">
+    <meta name="theme-color" content="#37ACF9">
     <meta name="referrer" content="strict-origin-when-cross-origin">
 
     <!-- Preconnect & DNS Prefetch (Speed Optimization) -->
@@ -63,7 +63,7 @@
     <meta property="og:site_name" content="NeuroView AI Official Store">
     <meta property="og:title" content="NeuroView AI™ - See Sharper, Think Faster">
     <meta property="og:description" content="Struggling with focus? NeuroView AI Glasses use smart lens technology to reduce strain and boost clarity. Secure your pair today with 65% OFF.">
-    <meta property="og:image" content="https://placehold.co/1200x630/62001B/FFF?text=NeuroView+AI+Glasses">
+    <meta property="og:image" content="https://placehold.co/1200x630/37ACF9/FFF?text=NeuroView+AI+Glasses">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:locale" content="en_US">
@@ -72,7 +72,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="NeuroView AI™ - Smart Vision Solution (65% OFF)">
     <meta name="twitter:description" content="Don't let eye strain ruin your day. Enhance focus with NeuroView AI. Fast Shipping & 30-Day Guarantee.">
-    <meta name="twitter:image" content="https://placehold.co/1200x630/62001B/FFF?text=NeuroView+AI+Glasses">
+    <meta name="twitter:image" content="https://placehold.co/1200x630/37ACF9/FFF?text=NeuroView+AI+Glasses">
 
     <!-- ============================================== -->
     <!-- 5. STRUCTURED DATA (JSON-LD) -->
@@ -84,8 +84,8 @@
         "@type": "Product",
         "name": "NeuroView AI Smart Glasses",
         "image": [
-          "https://placehold.co/400x400/62001B/FFF?text=NeuroView+Glasses",
-          "https://placehold.co/400x400/62001B/FFF?text=NeuroView+Case"
+          "https://placehold.co/400x400/37ACF9/FFF?text=NeuroView+Glasses",
+          "https://placehold.co/400x400/37ACF9/FFF?text=NeuroView+Case"
         ],
         "description": "NeuroView AI is premium smart eyewear designed to support mental clarity, reduce digital eye strain, and improve focus. Equipped with adaptive lens technology.",
         "sku": "NEURO-001",
@@ -143,8 +143,8 @@
                     colors: {
                         brand: {
                             black: '#000000',
-                            primary: '#62001B',
-                            'primary-dark': '#4a0014'
+                            primary: '#37ACF9',        /* UPDATED COLOR */
+                            'primary-dark': '#2C8CC7'  /* DARKER VARIANT FOR HOVER */
                         }
                     }
                 }
@@ -162,10 +162,10 @@
     <style>
         body { font-family: 'Inter', sans-serif; }
         
-        .hover-bg-brand-primary:hover { background-color: #4a0014; transition: background-color 0.3s ease; }
-        .text-brand-primary-dark { color: #4a0014; }
+        .hover-bg-brand-primary:hover { background-color: #2C8CC7; transition: background-color 0.3s ease; }
+        .text-brand-primary-dark { color: #2C8CC7; }
 
-        .check-primary { color: #62001B; }
+        .check-primary { color: #37ACF9; }
         
         .avatar-stack img { border: 2px solid white; }
         .flag-shadow { box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
@@ -188,7 +188,7 @@
         
         /* Fallback for broken images in preview */
         img.placeholder-fallback {
-            background-color: #f3f4f6;
+            background-color: #ffffff;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -259,20 +259,20 @@
                     <!-- Adjusted Mobile Container -->
                     <div class="mb-4 lg:mb-0 relative group flex justify-center lg:block">
                         
-                         <!-- Image Container with Carousel -->
-                         <div id="product-media-carousel" class="relative w-full max-w-[320px] sm:max-w-sm lg:max-w-full aspect-square rounded-xl overflow-hidden bg-gray-50 flex items-center justify-center">
+                         <!-- Image Container with Carousel - REMOVED bg-gray-50 and borders to make it clean -->
+                         <div id="product-media-carousel" class="relative w-full max-w-[320px] sm:max-w-sm lg:max-w-full aspect-square flex items-center justify-center">
                             
                             <!-- Slide 1 -->
                             <img src="images/neuroview.png" 
                                  id="slide-0"
-                                 onerror="this.onerror=null; this.src='https://placehold.co/600x600/f9fafb/62001B?text=NeuroView+1';" 
+                                 onerror="this.onerror=null; this.src='https://placehold.co/600x600/ffffff/37ACF9?text=NeuroView+1';" 
                                  alt="NeuroView Product 1" 
                                  class="carousel-slide absolute top-0 left-0 w-full h-full object-contain hover:scale-105 transition-transform duration-500 opacity-100">
                             
                             <!-- Slide 2 -->
                             <img src="images/neuroview1.png" 
                                  id="slide-1"
-                                 onerror="this.onerror=null; this.src='https://placehold.co/600x600/f9fafb/62001B?text=NeuroView+2';" 
+                                 onerror="this.onerror=null; this.src='https://placehold.co/600x600/ffffff/37ACF9?text=NeuroView+2';" 
                                  alt="NeuroView Product 2" 
                                  class="carousel-slide absolute top-0 left-0 w-full h-full object-contain hover:scale-105 transition-transform duration-500 opacity-0">
                                  
@@ -386,40 +386,41 @@
                         </div>
                         
                         <div class="p-8 flex-1 flex flex-col">
-                            <h3 class="text-2xl font-black text-brand-black mb-1 uppercase">Start Now</h3>
-                            <p class="text-brand-primary font-bold text-sm mb-4 tracking-wide uppercase">Fast Shipping · Limited Units Available</p>
+                            <h3 class="text-2xl font-black text-brand-black mb-1 uppercase">START USING NEUROVIEW TODAY</h3>
+                            <p class="text-brand-primary font-bold text-sm mb-4 tracking-wide uppercase">65% OFF · FAST SHIPPING · LIMITED STOCK</p>
                             
                             <p class="text-gray-600 mb-6 leading-relaxed">
-                                Secure your NeuroView AI Glasses today and start seeing the world with high-definition clarity while protecting your brain from digital fatigue.
+                                Get instant AI-powered translation, hands-free calling, and voice-controlled photo capture — all built into lightweight glasses you can wear every day. No learning curve. No extra devices.
                             </p>
                             
                             <ul class="space-y-3 mb-8 flex-1">
                                 <li class="flex items-start gap-3 text-sm font-medium text-gray-700">
-                                    <i class="fas fa-check text-green-500 mt-1"></i> <span class="font-bold text-brand-black">Save Up $120</span>
+                                    <i class="fas fa-check text-green-500 mt-1"></i> <span class="font-bold text-brand-black">Save up to 65% today (limited-time offer)</span>
                                 </li>
                                 <li class="flex items-start gap-3 text-sm font-medium text-gray-700">
-                                    <i class="fas fa-check text-green-500 mt-1"></i> <span class="font-bold text-brand-black">Free Hard Case Included</span>
+                                    <i class="fas fa-check text-green-500 mt-1"></i> <span class="font-bold text-brand-black">30-Day Money-Back Guarantee — risk-free trial</span>
                                 </li>
                                 <li class="flex items-start gap-3 text-sm font-medium text-gray-700">
-                                    <i class="fas fa-check text-green-500 mt-1"></i> Free Shipping on Select Packages
+                                    <i class="fas fa-check text-green-500 mt-1"></i> Fast shipping — no long waits
                                 </li>
                                 <li class="flex items-start gap-3 text-sm font-medium text-gray-700">
-                                    <i class="fas fa-check text-green-500 mt-1"></i> 30-Day Satisfaction Guarantee
+                                    <i class="fas fa-check text-green-500 mt-1"></i> Replaces earbuds, translator apps, and phone juggling
                                 </li>
                                 <li class="flex items-start gap-3 text-sm font-medium text-gray-700">
-                                    <i class="fas fa-check text-green-500 mt-1"></i> Lifetime Frame Warranty
+                                    <i class="fas fa-check text-green-500 mt-1"></i> Designed for comfort, style, and all-day wear
                                 </li>
                             </ul>
                             
                             <div class="text-red-600 font-bold text-sm mb-4 flex items-center gap-2 animate-pulse">
-                                <span class="w-2 h-2 rounded-full bg-red-600"></span> Units selling fast
+                                <span class="w-2 h-2 rounded-full bg-red-600"></span> High demand — units selling fast today
                             </div>
 
                             <!-- BUTTON MINIMALIST & COMPACT -->
                             <button onclick="goToOffer()" class="w-full bg-brand-primary text-white text-base md:text-lg font-bold py-3 px-4 rounded-lg shadow-md hover:bg-opacity-90 transition transform active:scale-95 cursor-pointer uppercase tracking-wide flex items-center justify-center gap-2 group">
-                                <span>BUY 65% OFF TODAY</span>
+                                <span>BUY NOW — GET 65% OFF</span>
                                 <i class="fas fa-arrow-right group-hover:translate-x-1 transition text-sm"></i>
                             </button>
+                            <p class="text-center text-xs text-gray-500 mt-3">No contracts. No subscriptions. One-time purchase.</p>
                         </div>
                     </div>
 
@@ -431,22 +432,28 @@
                         </div>
 
                         <div class="p-8 flex-1 flex flex-col">
-                            <h3 class="text-2xl font-black text-brand-black mb-1 uppercase">I Want to Learn More First</h3>
-                            <p class="text-gray-500 font-bold text-sm mb-4 tracking-wide uppercase">See How NeuroView Works — No Rush</p>
+                            <h3 class="text-2xl font-black text-brand-black mb-1 uppercase">I WANT TO LEARN MORE FIRST</h3>
+                            <p class="text-gray-500 font-bold text-sm mb-4 tracking-wide uppercase">How it works · Reviews · Real use cases</p>
                             
                             <p class="text-gray-600 mb-6 leading-relaxed">
-                                Prefer to understand how our adaptive lens technology works, the science behind blue light filtration, and why thousands of professionals are switching?
+                                Explore how NeuroView AI Glasses work in real life, what customers are saying, and why travelers, creators, and professionals are switching.
                             </p>
                             
                             <ul class="space-y-3 mb-8 flex-1">
                                 <li class="flex items-start gap-3 text-sm font-medium text-gray-700">
-                                    <i class="fas fa-book-open text-brand-primary mt-1"></i> The technology behind the lens
+                                    <i class="fas fa-book-open text-brand-primary mt-1"></i> How real-time AI translation works (130+ languages)
                                 </li>
                                 <li class="flex items-start gap-3 text-sm font-medium text-gray-700">
-                                    <i class="fas fa-flask text-brand-primary mt-1"></i> Blue light lab test results
+                                    <i class="fas fa-star text-brand-primary mt-1"></i> Verified customer reviews & real experiences
                                 </li>
                                 <li class="flex items-start gap-3 text-sm font-medium text-gray-700">
-                                    <i class="fas fa-brain text-brand-primary mt-1"></i> Impact on sleep and productivity
+                                    <i class="fas fa-microchip text-brand-primary mt-1"></i> How the AI assistant, audio, and voice controls work together
+                                </li>
+                                <li class="flex items-start gap-3 text-sm font-medium text-gray-700">
+                                    <i class="fas fa-globe text-brand-primary mt-1"></i> Everyday use cases: travel, work, commuting, content creation
+                                </li>
+                                <li class="flex items-start gap-3 text-sm font-medium text-gray-700">
+                                    <i class="fas fa-shield-alt text-brand-primary mt-1"></i> Quality, warranty, shipping & guarantee details
                                 </li>
                             </ul>
                             
@@ -454,9 +461,10 @@
 
                             <!-- BUTTON MINIMALIST & COMPACT -->
                             <button onclick="goToInfo()" class="w-full bg-white border-2 border-brand-primary text-brand-primary text-base md:text-lg font-bold py-3 px-4 rounded-lg hover:bg-gray-50 transition transform active:scale-95 cursor-pointer uppercase tracking-wide flex items-center justify-center gap-2">
-                                <span>WATCH THE DEMO</span>
-                                <i class="fas fa-play-circle text-sm"></i>
+                                <span>LEARN MORE ABOUT NEUROVIEW</span>
+                                <i class="fas fa-arrow-right text-sm"></i>
                             </button>
+                            <p class="text-center text-xs text-gray-500 mt-3">No pressure. Read everything before deciding.</p>
                         </div>
                     </div>
 
@@ -465,10 +473,10 @@
 
             <!-- LABEL IMAGE SECTION -->
             <section class="w-full max-w-5xl mx-auto px-5 mb-12 mt-8">
-                <!-- Removed shadow-xl and border classes -->
-                <div class="relative rounded-2xl overflow-hidden bg-gray-50 flex items-center justify-center p-4">
+                <!-- Removed shadow-xl and border classes and bg-gray-50 -->
+                <div class="relative rounded-2xl overflow-hidden flex items-center justify-center p-4">
                     <img src="images/neuroview-specs.png" 
-                         onerror="this.onerror=null; this.src='https://placehold.co/1000x500/f3f4f6/666?text=Tech+Specs+%26+Dimensions';" 
+                         onerror="this.onerror=null; this.src='https://placehold.co/1000x500/ffffff/666?text=Tech+Specs+%26+Dimensions';" 
                          alt="NeuroView Specs" class="w-full h-auto object-contain">
                 </div>
             </section>
