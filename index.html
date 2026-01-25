@@ -10,6 +10,9 @@
     <meta name="theme-color" content="#37ACF9">
     <meta name="referrer" content="strict-origin-when-cross-origin">
     
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favcon.png">
+
     <!-- Geo & Language Targeting -->
     <meta http-equiv="content-language" content="en">
     <meta name="geo.region" content="US-NJ"> <!-- Headquarters Region -->
@@ -327,6 +330,7 @@
             </div>
 
             <!-- MAIN CONTENT GRID -->
+            <!-- Updated Grid to ensure alignment -->
             <main class="px-5 pt-6 pb-8 lg:px-12 lg:py-12 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
                 
                 <!-- LEFT COLUMN (Product Image - Carousel) -->
@@ -357,10 +361,12 @@
                 </div>
 
                 <!-- RIGHT COLUMN (Sales Copy) -->
-                <div class="lg:col-span-7 flex flex-col justify-center">
+                <!-- Added text-center for mobile and lg:text-left for desktop to main container -->
+                <div class="lg:col-span-7 flex flex-col justify-center text-center lg:text-left">
                     
                     <!-- Star Rating -->
-                    <div class="flex items-center mb-2">
+                    <!-- Center on mobile, start on desktop -->
+                    <div class="flex items-center justify-center lg:justify-start mb-2">
                         <div class="flex text-brand-primary text-lg gap-0.5">
                             <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                         </div>
@@ -368,22 +374,24 @@
                     </div>
 
                     <!-- Headline -->
-                    <h1 class="text-3xl lg:text-4xl font-black leading-tight text-brand-black mb-3 text-left">
+                    <!-- text-center on mobile, lg:text-left on desktop -->
+                    <h1 class="text-3xl lg:text-4xl font-black leading-tight text-brand-black mb-3">
                         When Communication Breaks, Confidence Breaks.
                     </h1>
 
                     <!-- Subheadline -->
-                    <p class="text-lg lg:text-lg text-gray-500 font-medium leading-snug mb-3 text-left">
+                    <p class="text-lg lg:text-lg text-gray-500 font-medium leading-snug mb-3">
                         NeuroView AI Glasses remove friction from your everyday life — helping you communicate clearly, stay connected hands-free, and capture moments instantly, wherever you are.
                     </p>
 
                     <!-- Extra Description -->
-                    <p class="text-base text-gray-600 mb-5 text-left leading-relaxed">
+                    <p class="text-base text-gray-600 mb-5 leading-relaxed">
                         Designed for a fast, global world, NeuroView combines real-time AI translation, open-ear audio, and voice control into sleek, lightweight frames you can wear all day — without pulling out your phone.
                     </p>
 
                     <!-- Benefits List -->
-                    <ul class="space-y-3 lg:space-y-2 mb-6">
+                    <!-- Keeping list left aligned for readability of icons, but container allows it -->
+                    <ul class="space-y-3 lg:space-y-2 mb-6 text-left">
                         <li class="flex items-start gap-3">
                             <div class="mt-0.5 flex-shrink-0"><i class="fas fa-globe text-xl check-primary"></i></div>
                             <span class="text-gray-600 text-base lg:text-[16px] leading-snug"><strong>Real-Time AI Translation</strong> — understand and respond naturally in 130+ languages</span>
@@ -422,7 +430,8 @@
                     <p class="text-base lg:text-lg font-bold text-brand-black mb-2">Upgrade how you move, speak, and experience the world — without slowing down.</p>
 
                     <!-- SEALS IMAGE -->
-                    <div class="mb-5">
+                    <!-- Centered by parent text-center on mobile, lg:text-left aligns it left on desktop? No, images are inline-block. Need manual adjustment. -->
+                    <div class="mb-5 flex justify-center lg:justify-start">
                         <img src="images/selos.png" 
                              onerror="this.onerror=null; this.src='https://placehold.co/350x50/white/cccccc?text=FDA+Registered+%7C+UV400+Protection+%7C+Drop+Tested';" 
                              alt="Quality Seals" class="h-10 md:h-12 w-auto object-contain">
@@ -551,16 +560,6 @@
                         </div>
                     </div>
 
-                </div>
-            </section>
-
-            <!-- LABEL IMAGE SECTION -->
-            <section class="w-full max-w-5xl mx-auto px-5 mb-12 mt-8">
-                <!-- Removed shadow-xl and border classes and bg-gray-50 -->
-                <div class="relative rounded-2xl overflow-hidden flex items-center justify-center p-4">
-                    <img src="images/neuroview-specs.png" 
-                         onerror="this.onerror=null; this.src='https://placehold.co/1000x500/ffffff/666?text=Tech+Specs+%26+Dimensions';" 
-                         alt="NeuroView Specs" class="w-full h-auto object-contain">
                 </div>
             </section>
 
