@@ -2,7 +2,7 @@
 <html lang="en" prefix="og: https://ogp.me/ns#">
 <head>
     <!-- ============================================== -->
-    <!-- 1. TECHNICAL SEO & PERFORMANCE -->
+    <!-- 1. SEO TÉCNICO Y RENDIMIENTO -->
     <!-- ============================================== -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,10 +12,10 @@
     
     <link rel="icon" type="image/png" href="images/favcon.png">
 
-    <!-- GateraAds Script -->
+    <!-- Script GateraAds -->
     <script src="https://cdn.gateraads.com/code/8300-552d5c6e-5e0e-4b8d-87ef-e92af72a9344"></script>
 
-    <!-- Preconnect & DNS Prefetch -->
+    <!-- Pre-conexión y optimización de carga -->
     <link rel="preconnect" href="https://cdn.tailwindcss.com" crossorigin>
     <link rel="dns-prefetch" href="https://cdn.tailwindcss.com">
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
@@ -27,16 +27,16 @@
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style">
 
     <!-- ============================================== -->
-    <!-- 2. CORE SEO CONTENT -->
+    <!-- 2. CONTENIDO CORE SEO -->
     <!-- ============================================== -->
     <title>NeuroView AI Glasses | Understand Anyone. Stay Connected. Capture Life.</title>
-    <meta name="description" content="Break language barriers, stay connected anywhere, and capture moments instantly hands-free with NeuroView AI Glasses. Authorized distribution by Sapience Group LLC.">
+    <meta name="description" content="Break language barriers and stay connected hands-free with NeuroView AI Glasses. Authorized distribution by Sapience Group LLC. 30-day guarantee.">
     <meta name="author" content="Sapience Group LLC">
     <meta name="robots" content="index, follow">
     
     <link rel="canonical" href="https://myneuroview.vercel.app/">
 
-    <!-- Tailwind & Assets -->
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -48,13 +48,16 @@
                             primary: '#37ACF9',
                             'primary-dark': '#2C8CC7'
                         }
+                    },
+                    borderRadius: {
+                        '4xl': '2rem'
                     }
                 }
             }
         }
     </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     
     <style>
         body { font-family: 'Inter', sans-serif; }
@@ -64,210 +67,223 @@
             from { opacity: 0; transform: translateY(20px); }
             to { opacity: 1; transform: translateY(0); }
         }
-        .animate-fade-in-up { animation: fadeInUp 0.3s ease-out forwards; }
-        .carousel-slide { transition: opacity 1s ease-in-out; }
+        .animate-fade-in-up { animation: fadeInUp 0.4s ease-out forwards; }
+        .carousel-slide { transition: opacity 0.8s ease-in-out; }
         .check-primary { color: #37ACF9; }
+        
+        /* Mobile Touch Targets Optimization */
+        @media (max-width: 640px) {
+            button, a { min-height: 48px; }
+            .hero-title { font-size: 2rem; line-height: 1.1; }
+        }
     </style>
 </head>
-<body class="bg-gradient-to-b from-sky-50 via-white to-sky-50 text-gray-900 antialiased">
+<body class="bg-white text-gray-900 antialiased overflow-x-hidden">
 
-    <div class="w-full lg:max-w-7xl mx-auto bg-white min-h-screen lg:min-h-0 lg:rounded-2xl lg:shadow-2xl lg:my-8 flex flex-col relative transition-all duration-300">
+    <div class="w-full lg:max-w-7xl mx-auto bg-white min-h-screen lg:rounded-2xl lg:shadow-2xl lg:my-8 flex flex-col relative transition-all duration-300">
         
         <div id="home-view" class="flex-1 flex flex-col">
-            <!-- HEADER -->
-            <div class="sticky top-0 z-50 w-full bg-white shadow-md lg:rounded-t-2xl overflow-hidden">
-                <div class="bg-brand-primary py-2 px-2 border-b border-brand-primary-dark w-full">
-                    <div class="flex justify-center items-center gap-2 md:gap-8 text-white">
-                        <div class="flex items-center gap-1.5">
+            <!-- CABECERA ADAPTATIVA -->
+            <div class="sticky top-0 z-50 w-full bg-white shadow-sm lg:rounded-t-2xl overflow-hidden">
+                <div class="bg-brand-primary py-2 px-4 border-b border-brand-primary-dark w-full">
+                    <div class="flex justify-center items-center gap-4 md:gap-8 text-white">
+                        <div class="flex items-center gap-2">
                             <i class="fas fa-truck text-xs"></i>
-                            <span class="text-[10px] sm:text-xs font-bold uppercase tracking-tight">FREE U.S. SHIPPING</span>
+                            <span class="text-[9px] sm:text-xs font-bold uppercase tracking-widest">FREE U.S. SHIPPING</span>
                         </div>
-                        <div class="hidden sm:block w-px h-3 bg-white/30"></div>
-                        <div class="flex items-center gap-1.5">
+                        <div class="w-px h-3 bg-white/30"></div>
+                        <div class="flex items-center gap-2">
                             <i class="fas fa-shield-check text-xs"></i>
-                            <span class="text-[10px] sm:text-xs font-bold uppercase tracking-tight">30-DAY MONEY-BACK POLICY</span>
+                            <span class="text-[9px] sm:text-xs font-bold uppercase tracking-widest">30-DAY GUARANTEE</span>
                         </div>
                     </div>
                 </div>
 
-                <header class="pt-4 pb-4 px-5 md:px-8 bg-white flex flex-col items-center border-b border-gray-50">
-                    <div class="cursor-pointer" onclick="window.scrollTo(0,0)">
+                <header class="py-4 px-4 md:px-8 bg-white flex flex-col items-center border-b border-gray-50">
+                    <div class="cursor-pointer transition-transform hover:scale-105 active:scale-95" onclick="window.scrollTo(0,0)">
                          <img src="images/neuroview-logo.png" 
-                              onerror="this.onerror=null; this.src='https://placehold.co/240x50/white/000?text=NeuroView+AI&font=montserrat';" 
-                              alt="NeuroView Logo" class="h-10 md:h-12 w-auto object-contain">
+                              onerror="this.onerror=null; this.src='https://placehold.co/180x40/white/000?text=NeuroView+AI&font=montserrat';" 
+                              alt="NeuroView Logo" class="h-8 md:h-10 w-auto object-contain">
                     </div>
                 </header>
             </div>
 
-            <!-- SECTION 1: HERO (SEQUÊNCIA: TÍTULO -> FOTO -> ESCRITA -> BOTÃO) -->
-            <main class="px-5 pt-8 pb-12 lg:px-16 lg:py-16 flex flex-col items-center">
+            <!-- SECTION 1: HERO (Mobile First Hierarchy) -->
+            <main class="px-4 pt-6 pb-12 sm:px-6 lg:px-16 lg:py-16 flex flex-col items-center animate-fade-in-up">
                 
-                <!-- 1. TITULO -->
-                <div class="max-w-4xl mx-auto text-center mb-8">
-                    <div class="flex items-center justify-center mb-4">
-                        <div class="flex text-brand-primary text-lg gap-0.5">
+                <!-- 1. TÍTULO -->
+                <div class="w-full max-w-4xl text-center mb-6 lg:mb-10">
+                    <div class="inline-flex items-center bg-sky-50 px-3 py-1 rounded-full mb-4 border border-sky-100">
+                        <div class="flex text-brand-primary text-xs gap-0.5">
                             <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                         </div>
-                        <span class="ml-2 text-gray-700 font-bold text-sm lg:text-base">⭐ 4.9 / 5 Average Rating</span>
+                        <span class="ml-2 text-brand-primary-dark font-extrabold text-[10px] sm:text-xs uppercase tracking-tighter">⭐ 4.9 Average Rating</span>
                     </div>
-                    <h1 class="text-3xl lg:text-6xl font-black leading-tight text-brand-black mb-4">
-                        Understand Anyone. Stay Connected. Capture Life — All Hands-Free.
+                    <h1 class="hero-title text-3xl sm:text-4xl lg:text-6xl font-black leading-tight text-brand-black mb-4">
+                        Understand Anyone. Stay Connected. Capture Life — <span class="text-brand-primary">All Hands-Free.</span>
                     </h1>
-                    <p class="text-base lg:text-xl text-gray-500 font-medium">Break language barriers, stay connected anywhere, and capture moments instantly — without pulling out your phone.</p>
+                    <p class="text-sm sm:text-base lg:text-xl text-gray-500 font-medium max-w-2xl mx-auto px-2">Break language barriers, stay connected anywhere, and capture moments instantly — without pulling out your phone.</p>
                 </div>
 
-                <!-- 2. FOTO (Carrossel centralizado) -->
-                <div class="w-full max-w-2xl mx-auto mb-10">
-                    <div class="relative group flex justify-center">
+                <!-- 2. FOTO (Carrusel Responsivo) -->
+                <div class="w-full max-w-xl mx-auto mb-8 lg:mb-12">
+                    <div class="relative group flex justify-center bg-gray-50 rounded-4xl p-4 sm:p-8">
                          <div id="product-media-carousel" class="relative w-full aspect-square flex items-center justify-center">
-                            <img src="images/neuroview2.png" id="slide-0" class="carousel-slide absolute top-0 left-0 w-full h-full object-contain hover:scale-105 transition-transform duration-500 opacity-100" onerror="this.src='https://placehold.co/600x600/ffffff/37ACF9?text=NeuroView+2';">
-                            <img src="images/neuroview3.png" id="slide-1" class="carousel-slide absolute top-0 left-0 w-full h-full object-contain hover:scale-105 transition-transform duration-500 opacity-0" onerror="this.src='https://placehold.co/600x600/ffffff/37ACF9?text=NeuroView+3';">
+                            <img src="images/neuroview2.png" id="slide-0" class="carousel-slide absolute top-0 left-0 w-full h-full object-contain hover:scale-105 transition-transform duration-500 opacity-100" onerror="this.src='https://placehold.co/600x600/f9fafb/37ACF9?text=NeuroView+2';">
+                            <img src="images/neuroview3.png" id="slide-1" class="carousel-slide absolute top-0 left-0 w-full h-full object-contain hover:scale-105 transition-transform duration-500 opacity-0" onerror="this.src='https://placehold.co/600x600/f9fafb/37ACF9?text=NeuroView+3';">
                          </div>
                     </div>
                 </div>
 
-                <!-- 3. ESCRITA (Descrição e Benefícios) -->
-                <div class="max-w-3xl mx-auto mb-10 text-center lg:text-left">
-                    <p class="text-base lg:text-lg text-gray-600 mb-8 leading-relaxed text-center">
-                        NeuroView AI Glasses combine real-time AI assistance, smart audio, and hands-free control into a sleek, everyday wearable designed for real life. Trusted by 50,000+ Travelers, Creators & Professionals.
+                <!-- 3. ESCRITA (Benefícios Mobile Optimized) -->
+                <div class="w-full max-w-3xl mx-auto mb-10">
+                    <p class="text-sm sm:text-base lg:text-lg text-gray-600 mb-8 leading-relaxed text-center font-medium px-2">
+                        NeuroView AI Glasses combine real-time AI assistance, smart audio, and hands-free control into a sleek wearable designed for real life. Trusted by 50,000+ people.
                     </p>
 
-                    <div class="bg-sky-50 p-6 lg:p-10 rounded-3xl border border-sky-100 mb-10">
-                        <h3 class="font-black text-xl mb-6 text-brand-black text-center lg:text-left">Why People Choose NeuroView AI Glasses:</h3>
-                        <ul class="grid grid-cols-1 md:grid-cols-2 gap-4 text-left">
+                    <div class="bg-gray-50 p-5 sm:p-8 rounded-3xl border border-gray-100">
+                        <h3 class="font-black text-base sm:text-lg mb-6 text-brand-black text-center uppercase tracking-tight">Core Advantages</h3>
+                        <ul class="space-y-4 text-left">
                             <li class="flex items-start gap-3">
-                                <i class="fas fa-check-circle text-brand-primary mt-1"></i>
-                                <span class="text-gray-700 text-sm lg:text-base">Real-time voice translation in 130+ languages</span>
+                                <div class="flex-shrink-0 w-5 h-5 bg-brand-primary rounded-full flex items-center justify-center mt-0.5">
+                                    <i class="fas fa-check text-[10px] text-white"></i>
+                                </div>
+                                <span class="text-gray-700 text-sm sm:text-base font-semibold">Real-time voice translation in 130+ languages</span>
                             </li>
                             <li class="flex items-start gap-3">
-                                <i class="fas fa-check-circle text-brand-primary mt-1"></i>
-                                <span class="text-gray-700 text-sm lg:text-base">Hands-free calls, music, and AI assistance</span>
+                                <div class="flex-shrink-0 w-5 h-5 bg-brand-primary rounded-full flex items-center justify-center mt-0.5">
+                                    <i class="fas fa-check text-[10px] text-white"></i>
+                                </div>
+                                <span class="text-gray-700 text-sm sm:text-base font-semibold">Hands-free calls, music, and AI assistance</span>
                             </li>
                             <li class="flex items-start gap-3">
-                                <i class="fas fa-check-circle text-brand-primary mt-1"></i>
-                                <span class="text-gray-700 text-sm lg:text-base">Voice-controlled photo & video capture</span>
+                                <div class="flex-shrink-0 w-5 h-5 bg-brand-primary rounded-full flex items-center justify-center mt-0.5">
+                                    <i class="fas fa-check text-[10px] text-white"></i>
+                                </div>
+                                <span class="text-gray-700 text-sm sm:text-base font-semibold">Voice-controlled photo & video capture</span>
                             </li>
                             <li class="flex items-start gap-3">
-                                <i class="fas fa-check-circle text-brand-primary mt-1"></i>
-                                <span class="text-gray-700 text-sm lg:text-base">Open-ear audio for environmental awareness</span>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <i class="fas fa-check-circle text-brand-primary mt-1"></i>
-                                <span class="text-gray-700 text-sm lg:text-base">Lightweight design for all-day comfort</span>
+                                <div class="flex-shrink-0 w-5 h-5 bg-brand-primary rounded-full flex items-center justify-center mt-0.5">
+                                    <i class="fas fa-check text-[10px] text-white"></i>
+                                </div>
+                                <span class="text-gray-700 text-sm sm:text-base font-semibold">Open-ear audio for environment awareness</span>
                             </li>
                         </ul>
                     </div>
                 </div>
 
-                <!-- 4. BOTÃO (CTA Principal) -->
-                <div class="w-full max-w-xl mx-auto text-center">
-                    <button onclick="scrollToSelector()" class="w-full bg-brand-primary text-white text-base md:text-2xl font-black py-4 md:py-6 rounded-2xl shadow-xl hover-bg-brand-primary transition transform active:scale-95 flex flex-col items-center justify-center gap-1 uppercase tracking-wider">
-                        <span>Check Availability & Pricing</span>
-                        <span class="text-xs md:text-sm font-bold opacity-80 normal-case tracking-normal">Visit the official distribution store</span>
+                <!-- 4. BOTÃO PRINCIPAL (Atualizado para VIEW FEATURES) -->
+                <div class="w-full max-w-xl mx-auto text-center px-2">
+                    <button onclick="scrollToSelector()" class="w-full bg-brand-primary text-white text-base sm:text-lg lg:text-2xl font-black py-5 sm:py-6 rounded-2xl shadow-xl hover-bg-brand-primary transition transform active:scale-95 flex flex-col items-center justify-center gap-1 uppercase tracking-widest">
+                        <span>VIEW FEATURES</span>
+                        <span class="text-[10px] sm:text-xs font-bold opacity-80 normal-case tracking-normal">See distribution offers at official store</span>
                     </button>
-                    <p class="mt-4 text-[11px] text-gray-400 font-bold uppercase tracking-widest">🔴 Selling out fast due to high demand</p>
+                    <div class="mt-4 flex items-center justify-center gap-2">
+                        <span class="flex h-2 w-2 rounded-full bg-red-500 animate-pulse"></span>
+                        <p class="text-[10px] text-gray-400 font-bold uppercase tracking-widest">Selling out fast due to high demand</p>
+                    </div>
                 </div>
             </main>
 
-            <!-- SECTION 2: CHOICE SELECTOR (Opção 1 e Opção 2) -->
-            <section id="region-selector" class="bg-gray-50 py-16 px-5 border-t border-gray-200 scroll-mt-24">
-                <div class="text-center mb-12">
-                    <h2 class="text-3xl md:text-4xl font-black text-brand-black mb-3">Choose How You Want to Proceed</h2>
-                    <p class="text-gray-500">Authorized Distribution Marketplace</p>
+            <!-- SECTION 2: ACCESS CHOICES -->
+            <section id="region-selector" class="bg-gray-50 py-12 px-4 sm:px-6 border-t border-gray-200 scroll-mt-24">
+                <div class="text-center mb-10">
+                    <h2 class="text-2xl sm:text-3xl font-black text-brand-black mb-3">Next Steps</h2>
+                    <p class="text-xs sm:text-sm text-gray-500 font-medium">Authorized Sapience Group LLC Marketplace</p>
                 </div>
                 
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 max-w-6xl mx-auto">
                     <!-- OPTION 1 -->
-                    <div class="bg-white rounded-3xl shadow-2xl border-2 border-brand-primary overflow-hidden flex flex-col transform hover:-translate-y-1 transition duration-300">
-                        <div class="bg-brand-primary text-white text-center py-3 font-black uppercase text-sm tracking-widest">OPTION 1 — FAST ACCESS</div>
-                        <div class="p-8 lg:p-12 flex-1 flex flex-col">
-                            <h3 class="text-2xl font-black text-brand-black mb-2 uppercase">Get Started Now</h3>
-                            <p class="text-brand-primary font-bold text-sm mb-6 uppercase tracking-widest">Instant Access • Limited Stock</p>
-                            <p class="text-gray-600 mb-8 leading-relaxed">Secure your NeuroView AI Glasses today and experience smarter, hands-free communication wherever you go.</p>
+                    <div class="bg-white rounded-3xl shadow-lg border-2 border-brand-primary overflow-hidden flex flex-col transition hover:shadow-2xl">
+                        <div class="bg-brand-primary text-white text-center py-3 font-black uppercase text-xs tracking-widest">OPTION 1 — FAST ACCESS</div>
+                        <div class="p-6 sm:p-10 flex-1 flex flex-col">
+                            <h3 class="text-xl sm:text-2xl font-black text-brand-black mb-2 uppercase">Get Started Now</h3>
+                            <p class="text-brand-primary font-bold text-[10px] sm:text-xs mb-6 uppercase tracking-widest">Instant Access • Limited Stock</p>
+                            <p class="text-gray-600 text-sm sm:text-base mb-8 leading-relaxed">Secure your NeuroView AI Glasses today and experience smarter, hands-free communication wherever you go.</p>
                             
-                            <ul class="space-y-3 mb-10 text-sm font-bold text-gray-700">
+                            <ul class="space-y-3 mb-10 text-xs sm:text-sm font-bold text-gray-700">
                                 <li class="flex items-center gap-3"><i class="fas fa-check text-green-500"></i> Free U.S. Shipping</li>
                                 <li class="flex items-center gap-3"><i class="fas fa-check text-green-500"></i> 30-Day Money-Back Guarantee</li>
-                                <li class="flex items-center gap-3"><i class="fas fa-check text-green-500"></i> One-Time Payment — No Subscriptions</li>
+                                <li class="flex items-center gap-3"><i class="fas fa-check text-green-500"></i> One-Time Payment</li>
                             </ul>
 
-                            <button onclick="goToOffer()" class="w-full bg-brand-primary text-white text-lg font-black py-5 rounded-xl shadow-lg hover:brightness-110 transition transform active:scale-95 uppercase tracking-wide">
-                                UNLOCK 65% OFF — GET YOUR GLASSES
+                            <button onclick="goToOffer()" class="mt-auto w-full bg-brand-primary text-white text-base sm:text-lg font-black py-4 rounded-xl shadow-md hover:brightness-110 active:scale-95 uppercase tracking-wide">
+                                UNLOCK 65% OFF — GET NOW
                             </button>
                         </div>
                     </div>
 
-                    <!-- OPTION 2 -->
-                    <div class="bg-white rounded-3xl shadow-xl border border-gray-200 overflow-hidden flex flex-col transform hover:-translate-y-1 transition duration-300">
-                        <div class="bg-gray-100 text-gray-600 text-center py-3 font-black uppercase text-sm tracking-widest border-b border-gray-200">OPTION 2 — LEARN MORE</div>
-                        <div class="p-8 lg:p-12 flex-1 flex flex-col">
-                            <h3 class="text-2xl font-black text-brand-black mb-2 uppercase text-center lg:text-left">Learn Before You Buy</h3>
-                            <p class="text-gray-400 font-bold text-sm mb-6 uppercase tracking-widest">Understand the technology</p>
-                            <p class="text-gray-600 mb-8 leading-relaxed">See how NeuroView integrates AI, audio, and translation into one seamless wearable experience before deciding.</p>
+                    <!-- OPTION 2 (Ajustado para VIEW FEATURES) -->
+                    <div class="bg-white rounded-3xl shadow-md border border-gray-200 overflow-hidden flex flex-col transition hover:shadow-lg">
+                        <div class="bg-gray-100 text-gray-600 text-center py-3 font-black uppercase text-xs tracking-widest border-b">OPTION 2 — LEARN MORE</div>
+                        <div class="p-6 sm:p-10 flex-1 flex flex-col">
+                            <h3 class="text-xl sm:text-2xl font-black text-brand-black mb-2 uppercase">Tech Overview</h3>
+                            <p class="text-gray-400 font-bold text-[10px] sm:text-xs mb-6 uppercase tracking-widest">Understand the technology</p>
+                            <p class="text-gray-600 text-sm sm:text-base mb-8 leading-relaxed">See how NeuroView integrates AI, audio, and translation into one seamless wearable experience before deciding.</p>
                             
-                            <ul class="space-y-3 mb-10 text-sm text-gray-500 font-medium">
-                                <li class="flex items-center gap-3"><i class="fas fa-info-circle"></i> Read the full product overview</li>
+                            <ul class="space-y-3 mb-10 text-xs sm:text-sm text-gray-500 font-medium">
+                                <li class="flex items-center gap-3"><i class="fas fa-info-circle"></i> Read full product overview</li>
                                 <li class="flex items-center gap-3"><i class="fas fa-microchip"></i> AI features & compatibility</li>
                                 <li class="flex items-center gap-3"><i class="fas fa-headphones"></i> Audio design and comfort</li>
                             </ul>
 
-                            <button onclick="goToInfo()" class="w-full bg-white border-2 border-brand-primary text-brand-primary text-lg font-black py-5 rounded-xl hover:bg-gray-50 transition transform active:scale-95 uppercase">
-                                VIEW FEATURES — 65% OFF AVAILABLE
+                            <button onclick="goToInfo()" class="mt-auto w-full bg-white border-2 border-brand-primary text-brand-primary text-base sm:text-lg font-black py-4 rounded-xl hover:bg-gray-50 active:scale-95 uppercase">
+                                VIEW FEATURES
                             </button>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <!-- SECTION 3: USES -->
-            <section class="py-16 px-5 bg-white">
+            <!-- SECTION 3: USOS (Mobile Optimized Grid) -->
+            <section class="py-12 sm:py-20 px-4 sm:px-6 bg-white overflow-hidden">
                 <div class="max-w-6xl mx-auto">
-                    <div class="text-center mb-16">
-                        <h2 class="text-3xl lg:text-5xl font-black text-brand-black mb-4 uppercase">One Pair. Limitless Everyday Uses.</h2>
+                    <div class="text-center mb-10 sm:mb-16">
+                        <h2 class="text-2xl sm:text-4xl lg:text-5xl font-black text-brand-black mb-4 uppercase">Limitless Everyday Uses</h2>
                     </div>
                     
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                        <div class="bg-gray-50 p-6 rounded-3xl text-center border border-gray-100">
-                            <div class="w-14 h-14 bg-brand-primary text-white rounded-2xl flex items-center justify-center text-2xl mx-auto mb-6"><i class="fas fa-plane"></i></div>
-                            <h4 class="font-bold text-lg mb-3 uppercase">Travel</h4>
-                            <p class="text-sm text-gray-600">Communicate confidently, understand locals, and capture memories naturally.</p>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
+                        <div class="bg-gray-50 p-4 sm:p-6 rounded-3xl text-center border border-gray-100">
+                            <div class="w-10 h-10 sm:w-14 sm:h-14 bg-brand-primary text-white rounded-2xl flex items-center justify-center text-lg sm:text-2xl mx-auto mb-4 sm:mb-6"><i class="fas fa-plane"></i></div>
+                            <h4 class="font-bold text-xs sm:text-base mb-2 uppercase tracking-tight">Travel</h4>
+                            <p class="text-[10px] sm:text-sm text-gray-600 hidden sm:block">Communicate confidently anywhere.</p>
                         </div>
-                        <div class="bg-gray-50 p-6 rounded-3xl text-center border border-gray-100">
-                            <div class="w-14 h-14 bg-brand-primary text-white rounded-2xl flex items-center justify-center text-2xl mx-auto mb-6"><i class="fas fa-briefcase"></i></div>
-                            <h4 class="font-bold text-lg mb-3 uppercase">Work</h4>
-                            <p class="text-sm text-gray-600">Take calls, manage tasks, and access AI assistance without breaking focus.</p>
+                        <div class="bg-gray-50 p-4 sm:p-6 rounded-3xl text-center border border-gray-100">
+                            <div class="w-10 h-10 sm:w-14 sm:h-14 bg-brand-primary text-white rounded-2xl flex items-center justify-center text-lg sm:text-2xl mx-auto mb-4 sm:mb-6"><i class="fas fa-briefcase"></i></div>
+                            <h4 class="font-bold text-xs sm:text-base mb-2 uppercase tracking-tight">Work</h4>
+                            <p class="text-[10px] sm:text-sm text-gray-600 hidden sm:block">Take calls and manage tasks.</p>
                         </div>
-                        <div class="bg-gray-50 p-6 rounded-3xl text-center border border-gray-100">
-                            <div class="w-14 h-14 bg-brand-primary text-white rounded-2xl flex items-center justify-center text-2xl mx-auto mb-6"><i class="fas fa-car"></i></div>
-                            <h4 class="font-bold text-lg mb-3 uppercase">Mobility</h4>
-                            <p class="text-sm text-gray-600">Stay connected while walking, commuting, or driving — hands-free.</p>
+                        <div class="bg-gray-50 p-4 sm:p-6 rounded-3xl text-center border border-gray-100">
+                            <div class="w-10 h-10 sm:w-14 sm:h-14 bg-brand-primary text-white rounded-2xl flex items-center justify-center text-lg sm:text-2xl mx-auto mb-4 sm:mb-6"><i class="fas fa-car"></i></div>
+                            <h4 class="font-bold text-xs sm:text-base mb-2 uppercase tracking-tight">Mobility</h4>
+                            <p class="text-[10px] sm:text-sm text-gray-600 hidden sm:block">Stay connected while moving.</p>
                         </div>
-                        <div class="bg-gray-50 p-6 rounded-3xl text-center border border-gray-100">
-                            <div class="w-14 h-14 bg-brand-primary text-white rounded-2xl flex items-center justify-center text-2xl mx-auto mb-6"><i class="fas fa-share-alt"></i></div>
-                            <h4 class="font-bold text-lg mb-3 uppercase">Social</h4>
-                            <p class="text-sm text-gray-600">Capture photos and videos instantly using simple voice commands.</p>
+                        <div class="bg-gray-50 p-4 sm:p-6 rounded-3xl text-center border border-gray-100">
+                            <div class="w-10 h-10 sm:w-14 sm:h-14 bg-brand-primary text-white rounded-2xl flex items-center justify-center text-lg sm:text-2xl mx-auto mb-4 sm:mb-6"><i class="fas fa-share-alt"></i></div>
+                            <h4 class="font-bold text-xs sm:text-base mb-2 uppercase tracking-tight">Social</h4>
+                            <p class="text-[10px] sm:text-sm text-gray-600 hidden sm:block">Capture and share moments.</p>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <!-- SECTION 4: HOW TECHNOLOGY WORKS -->
-            <section class="py-16 px-5 bg-sky-50/50 border-t border-gray-100">
+            <!-- SECTION 4: TECH -->
+            <section class="py-12 sm:py-20 px-4 sm:px-6 bg-sky-50/50 border-t border-gray-100">
                 <div class="max-w-5xl mx-auto">
-                    <h2 class="text-3xl lg:text-4xl font-black text-center mb-16 uppercase">How the Technology Works</h2>
-                    <div class="space-y-8">
-                        <div class="flex flex-col md:flex-row gap-8 items-center bg-white p-8 rounded-3xl shadow-sm border border-sky-100">
-                            <div class="text-4xl text-brand-primary"><i class="fas fa-microchip"></i></div>
-                            <div>
-                                <h4 class="font-black text-xl mb-2 uppercase">The Processing System</h4>
-                                <p class="text-gray-600 leading-relaxed text-sm lg:text-base">NeuroView pairs with your smartphone via encrypted Bluetooth, enabling real-time AI support and translation while helping keep your data private.</p>
+                    <h2 class="text-2xl sm:text-4xl font-black text-center mb-10 sm:mb-16 uppercase">How it Works</h2>
+                    <div class="grid grid-cols-1 gap-6">
+                        <div class="flex flex-col md:flex-row gap-6 items-center bg-white p-6 sm:p-8 rounded-3xl shadow-sm border border-sky-100">
+                            <div class="text-3xl sm:text-4xl text-brand-primary"><i class="fas fa-microchip"></i></div>
+                            <div class="text-center md:text-left">
+                                <h4 class="font-black text-base sm:text-xl mb-2 uppercase tracking-tight">Processing System</h4>
+                                <p class="text-gray-600 leading-relaxed text-xs sm:text-base font-medium">NeuroView pairs with your smartphone via encrypted Bluetooth, enabling real-time AI translation while keeping your data private.</p>
                             </div>
                         </div>
-                        <div class="flex flex-col md:flex-row gap-8 items-center bg-white p-8 rounded-3xl shadow-sm border border-sky-100">
-                            <div class="text-4xl text-brand-primary"><i class="fas fa-headphones"></i></div>
-                            <div>
-                                <h4 class="font-black text-xl mb-2 uppercase">Ergonomic Design</h4>
-                                <p class="text-gray-600 leading-relaxed text-sm lg:text-base">Lightweight polymer frames with directional open-ear speakers deliver clear sound while allowing environmental awareness.</p>
+                        <div class="flex flex-col md:flex-row gap-6 items-center bg-white p-6 sm:p-8 rounded-3xl shadow-sm border border-sky-100">
+                            <div class="text-3xl sm:text-4xl text-brand-primary"><i class="fas fa-headphones"></i></div>
+                            <div class="text-center md:text-left">
+                                <h4 class="font-black text-base sm:text-xl mb-2 uppercase tracking-tight">Ergonomic Design</h4>
+                                <p class="text-gray-600 leading-relaxed text-xs sm:text-base font-medium">Lightweight polymer frames with directional open-ear speakers deliver clear sound while allowing awareness of your surroundings.</p>
                             </div>
                         </div>
                     </div>
@@ -275,31 +291,31 @@
             </section>
 
             <!-- SECTION 5: FAQ -->
-            <section class="py-16 lg:py-24 px-5 bg-gray-50 border-t border-gray-200">
+            <section class="py-12 sm:py-20 px-4 sm:px-6 bg-gray-50 border-t border-gray-200">
                 <div class="max-w-3xl mx-auto">
-                    <h2 class="text-3xl lg:text-4xl font-black text-center mb-16 uppercase tracking-tighter">Frequently Asked Questions</h2>
-                    <div class="space-y-6">
-                        <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
-                            <h4 class="font-black text-brand-black text-lg mb-2">Do the glasses require a subscription?</h4>
-                            <p class="text-sm text-gray-600 leading-relaxed">Core features operate through the standard app interface without mandatory monthly fees for basic functionality.</p>
+                    <h2 class="text-2xl sm:text-3xl font-black text-center mb-10 uppercase tracking-tighter">Common Questions</h2>
+                    <div class="space-y-4">
+                        <div class="bg-white p-5 sm:p-6 rounded-2xl shadow-sm border border-gray-100">
+                            <h4 class="font-black text-brand-black text-sm sm:text-base mb-2">Subscription required?</h4>
+                            <p class="text-[11px] sm:text-sm text-gray-600 leading-relaxed font-medium text-left">Core features operate through the standard app interface without mandatory monthly fees for basic functionality.</p>
                         </div>
-                        <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
-                            <h4 class="font-black text-brand-black text-lg mb-2">Are they compatible with prescription lenses?</h4>
-                            <p class="text-sm text-gray-600 leading-relaxed">The frames are designed to allow lens replacement by a qualified optician in many cases.</p>
+                        <div class="bg-white p-5 sm:p-6 rounded-2xl shadow-sm border border-gray-100">
+                            <h4 class="font-black text-brand-black text-sm sm:text-base mb-2">Prescription lenses?</h4>
+                            <p class="text-[11px] sm:text-sm text-gray-600 leading-relaxed font-medium text-left">The frames are designed to allow lens replacement by a qualified optician in most cases.</p>
                         </div>
-                        <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
-                            <h4 class="font-black text-brand-black text-lg mb-2">How long does the battery last?</h4>
-                            <p class="text-sm text-gray-600 leading-relaxed">Typical usage provides approximately 4–6 hours of active audio or translation. Charging is fast via USB-C.</p>
+                        <div class="bg-white p-5 sm:p-6 rounded-2xl shadow-sm border border-gray-100">
+                            <h4 class="font-black text-brand-black text-sm sm:text-base mb-2">Battery life?</h4>
+                            <p class="text-[11px] sm:text-sm text-gray-600 leading-relaxed font-medium text-left">Approximately 4–6 hours of active audio or translation. Rapid charging via USB-C included.</p>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <!-- FOOTER -->
-            <footer class="bg-white border-t border-gray-200 pt-16 pb-12 px-5 mt-auto">
+            <!-- FOOTER (Compliance 100%) -->
+            <footer class="bg-white border-t border-gray-200 pt-12 pb-8 px-4 sm:px-6 mt-auto">
                 <div class="max-w-5xl mx-auto flex flex-col items-center">
                     
-                    <nav class="flex flex-wrap justify-center gap-x-8 gap-y-4 mb-12 text-sm text-gray-500 font-bold uppercase tracking-widest">
+                    <nav class="flex flex-wrap justify-center gap-x-6 gap-y-3 mb-10 text-[10px] sm:text-xs text-gray-500 font-black uppercase tracking-widest">
                         <button onclick="openModal('privacy')" class="hover:text-brand-primary">Privacy Policy</button>
                         <button onclick="openModal('terms')" class="hover:text-brand-primary">Terms of Service</button>
                         <button onclick="openModal('shipping')" class="hover:text-brand-primary">Shipping & Delivery</button>
@@ -308,83 +324,85 @@
                     </nav>
 
                     <!-- Trust Icons -->
-                    <div class="flex flex-wrap justify-center gap-8 mb-12 opacity-40">
-                         <div class="flex flex-col items-center gap-1"><i class="fas fa-lock text-xl"></i><span class="text-[8px] font-black uppercase">Secure Checkout</span></div>
-                         <div class="flex flex-col items-center gap-1"><i class="fas fa-truck-fast text-xl"></i><span class="text-[8px] font-black uppercase">Fast Shipping</span></div>
-                         <div class="flex flex-col items-center gap-1"><i class="fas fa-user-shield text-xl"></i><span class="text-[8px] font-black uppercase">Verified Buyer</span></div>
+                    <div class="flex flex-wrap justify-center gap-6 sm:gap-10 mb-10 opacity-30 grayscale scale-90 sm:scale-100">
+                         <div class="flex flex-col items-center gap-1"><i class="fas fa-lock text-xl"></i><span class="text-[7px] font-black uppercase">Secure</span></div>
+                         <div class="flex flex-col items-center gap-1"><i class="fas fa-truck-fast text-xl"></i><span class="text-[7px] font-black uppercase">Tracked</span></div>
+                         <div class="flex flex-col items-center gap-1"><i class="fas fa-user-shield text-xl"></i><span class="text-[7px] font-black uppercase">Authorized</span></div>
                     </div>
 
                     <!-- Medical & Legal Notice -->
-                    <div class="max-w-3xl text-center mb-12 px-6 py-8 bg-gray-50 rounded-3xl border border-gray-100 shadow-inner">
-                        <p class="text-[10px] leading-relaxed font-bold text-gray-400 uppercase tracking-widest mb-4">Important Notice</p>
-                        <p class="text-[11px] leading-relaxed text-gray-500">NeuroView AI Glasses are not a medical device and are not intended to diagnose, treat, or prevent any medical condition or vision impairment. Always consult a healthcare professional regarding vision or health concerns. Results may vary by individual use case. This site is an independent marketplace operated by <strong>Sapience Group LLC</strong> and is not part of Facebook, Google, or Meta platforms.</p>
+                    <div class="max-w-3xl text-center mb-10 px-4 py-6 bg-gray-50 rounded-2xl border border-gray-100">
+                        <p class="text-[8px] sm:text-[9px] leading-relaxed font-bold text-gray-400 uppercase tracking-widest mb-3 text-center">Legal Notice</p>
+                        <p class="text-[9px] sm:text-[11px] leading-relaxed text-gray-500 font-medium text-center">NeuroView AI Glasses are not a medical device and are not intended to diagnose, treat, or prevent any medical condition. Always consult a healthcare professional. Results may vary. This site is an independent distribution portal operated by <strong>Sapience Group LLC</strong> and is not part of Meta, Google, or TikTok.</p>
                     </div>
 
-                    <!-- Identity & Compliance (DADOS PREENCHIDOS) -->
-                    <div class="text-center mb-8">
-                        <div class="text-[15px] text-gray-800 font-black uppercase tracking-[0.2em] mb-2">Sapience Group LLC</div>
-                        <div class="text-[10px] text-gray-600 font-bold uppercase tracking-widest mb-1">Registered US Business Entity</div>
-                        <div class="text-[11px] text-gray-400">78 John Miller Way, Kearny, New Jersey 07032, USA</div>
-                        <div class="text-[11px] text-gray-400 mt-2 uppercase font-bold tracking-tighter">Support Email: <a href="mailto:hello@myneuroview.com" class="text-brand-primary underline">hello@myneuroview.com</a></div>
+                    <!-- IDENTITY EMPRESARIAL OFICIAL -->
+                    <div class="text-center mb-8 px-4">
+                        <div class="text-sm sm:text-base text-gray-800 font-black uppercase tracking-[0.2em] mb-1">Sapience Group LLC</div>
+                        <div class="text-[9px] sm:text-[10px] text-gray-500 font-bold mb-3 uppercase tracking-widest">Authorized Distributor</div>
+                        <div class="text-[10px] sm:text-xs text-gray-400 font-medium">78 John Miller Way, Kearny, New Jersey 07032, USA</div>
+                        <div class="text-[10px] sm:text-xs text-gray-400 mt-1 uppercase font-bold">Support: <a href="mailto:hello@myneuroview.com" class="text-brand-primary underline decoration-2 underline-offset-2">hello@myneuroview.com</a></div>
                     </div>
 
                     <!-- EEAT Section -->
-                    <div class="text-center max-w-2xl mb-10 p-8 bg-white rounded-3xl border border-gray-200 shadow-sm">
-                        <h4 class="font-black text-gray-800 mb-2 uppercase text-xs tracking-widest">About Our Authorized Review Portal</h4>
-                        <p class="text-[11px] text-gray-500 italic leading-relaxed">Sapience Group LLC is a professional technology curator and authorized distributor. Our mission is to provide transparent, data-backed information about wearable AI to help consumers make informed decisions. We may receive commissions for purchases made through our referral links to official storefronts.</p>
+                    <div class="text-center max-w-2xl mb-8 p-6 bg-white rounded-2xl border border-gray-100 shadow-sm mx-4">
+                        <h4 class="font-black text-gray-800 mb-2 uppercase text-[9px] tracking-widest">About Our Distribution Portal</h4>
+                        <p class="text-[10px] text-gray-500 italic leading-relaxed text-center"><strong>Sapience Group LLC</strong> is a professional technology curator. Our mission is to provide transparent, data-backed information about wearable AI. We may receive commissions for purchases made through our referral links to official storefronts.</p>
                     </div>
                     
-                    <div class="text-[10px] text-gray-300 mt-4 italic font-medium uppercase tracking-widest">© 2026 Sapience Group LLC. All rights reserved.</div>
+                    <div class="text-[9px] text-gray-300 mt-2 font-black uppercase tracking-widest">© 2026 Sapience Group LLC. All rights reserved.</div>
                 </div>
             </footer>
         </div>
 
         <!-- MODAL SYSTEM -->
-        <div id="info-modal" class="fixed inset-0 bg-black bg-opacity-60 z-[100] hidden items-center justify-center p-4 backdrop-blur-md">
+        <div id="info-modal" class="fixed inset-0 bg-black bg-opacity-70 z-[100] hidden items-center justify-center p-4 backdrop-blur-sm">
             <div class="bg-white rounded-3xl shadow-2xl w-full max-w-2xl max-h-[90vh] flex flex-col relative animate-fade-in-up">
-                <button onclick="closeModal()" class="absolute top-6 right-6 text-gray-400 hover:text-black p-2">
-                    <i class="fas fa-times text-2xl"></i>
+                <button onclick="closeModal()" class="absolute top-5 right-5 text-gray-400 hover:text-black p-2 focus:outline-none">
+                    <i class="fas fa-times text-xl"></i>
                 </button>
-                <div id="modal-content" class="p-8 md:p-12 overflow-y-auto text-gray-700 leading-relaxed text-sm md:text-base"></div>
-                <div class="p-6 border-t border-gray-100 bg-gray-50 rounded-b-3xl flex justify-end">
-                    <button onclick="closeModal()" class="bg-brand-black text-white px-8 py-3 rounded-xl text-sm font-black uppercase tracking-wider">Close</button>
+                <div id="modal-content" class="p-6 sm:p-10 overflow-y-auto text-gray-700 leading-relaxed text-xs sm:text-sm font-medium"></div>
+                <div class="p-5 border-t border-gray-100 bg-gray-50 rounded-b-3xl flex justify-end">
+                    <button onclick="closeModal()" class="bg-brand-black text-white px-8 py-3 rounded-xl text-xs font-black uppercase tracking-widest hover:bg-gray-800 transition">Close</button>
                 </div>
             </div>
         </div>
     </div>
 
     <script>
+        // CONFIGURACIÓN DE LINKS DE AFILIADO
         const DTC_URL = "https://www.fasttrack37.com/PM7HK3TH/2RL1CDCN/?uid=49043";
         const VSL_URL = "https://www.fasttrack37.com/PM7HK3TH/2RL1CDCN/?uid=49044";
 
+        // CONTENIDO LEGAL ACTUALIZADO
         const modalContent = {
             'terms': `
-                <h2 class="text-2xl font-black mb-6 uppercase tracking-tight">Terms of Service</h2>
-                <p class="mb-4">This website is an authorized informational and referral portal operated by <strong>Sapience Group LLC</strong>, located at 78 John Miller Way, Kearny, NJ 07032. Throughout the site, the terms “we”, “us” and “our” refer to the Company.</p>
-                <p class="mb-4">By visiting our site and/or purchasing from official merchant links provided here, you engage in our “Service” and agree to be bound by these terms and conditions. We act as an authorized referral partner for NeuroView products. All final transactions, billing, and product warranties are handled directly by the official manufacturer and their primary merchant storefront.</p>
-                <p class="mb-4">Questions about the Terms should be sent to us at <strong>hello@myneuroview.com</strong>.</p>
+                <h2 class="text-lg sm:text-xl font-black mb-6 uppercase tracking-tight">Terms of Service</h2>
+                <p class="mb-4">This website is an authorized informational portal operated by <strong>Sapience Group LLC</strong>, at 78 John Miller Way, Kearny, NJ 07032.</p>
+                <p class="mb-4">By visiting our site, you agree to these terms. We act as an authorized referral partner. Final transactions, billing, and product warranties are handled directly by the official manufacturer merchant.</p>
+                <p class="mb-4">Questions should be sent to <strong>hello@myneuroview.com</strong>.</p>
             `,
             'privacy': `
-                <h2 class="text-2xl font-black mb-6 uppercase tracking-tight">Privacy Policy</h2>
-                <p class="mb-4"><strong>Sapience Group LLC</strong> values your data privacy. When you browse our portal, we automatically receive your computer’s internet protocol (IP) address in order to provide us with information that helps us learn about your browser and operating system for performance optimization.</p>
-                <p class="mb-4">No sensitive payment information (credit card data) or personal health data is collected or stored on this portal. Referral tracking cookies are used solely to attribute sales to our authorized distribution channel.</p>
-                <p class="mb-4">For privacy inquiries, contact our Data Protection Officer at <strong>hello@myneuroview.com</strong> or mail us at 78 John Miller Way, Kearny, NJ 07032.</p>
+                <h2 class="text-lg sm:text-xl font-black mb-6 uppercase tracking-tight">Privacy Policy</h2>
+                <p class="mb-4"><strong>Sapience Group LLC</strong> values your privacy. We automatically receive your IP address for browser/operating system optimization.</p>
+                <p class="mb-4">No sensitive payment information or health data is stored on this portal. Referral cookies are used only for distribution channel attribution.</p>
+                <p class="mb-4">Contact us at 78 John Miller Way, Kearny, NJ 07032 for privacy inquiries.</p>
             `,
             'shipping': `
-                <h2 class="text-2xl font-black mb-6 uppercase tracking-tight">Shipping & Delivery</h2>
-                <p class="mb-4">Standard tracked shipping is provided for domestic U.S. orders. International delivery times vary (typically 3-7 business days processing). All fulfillment and logistics are managed by the primary manufacturer. <strong>Sapience Group LLC</strong> acts as a facilitator and authorized distributor to ensure your order is prioritized.</p>
+                <h2 class="text-lg sm:text-xl font-black mb-6 uppercase tracking-tight">Shipping & Delivery</h2>
+                <p class="mb-4">Standard tracked shipping is provided for domestic U.S. orders via manufacturer centers. International delivery typically ranges from 3-7 business days processing. <strong>Sapience Group LLC</strong> ensures your referral is prioritized.</p>
             `,
             'returns': `
-                <h2 class="text-2xl font-black mb-6 uppercase tracking-tight">Returns & Refunds</h2>
-                <p class="mb-4">All purchases made through our referral links are protected by a 30-day money-back guarantee provided by the official store. If you are not satisfied, please contact the support email listed on your purchase receipt to initiate a return to the manufacturer fulfillment center.</p>
+                <h2 class="text-lg sm:text-xl font-black mb-6 uppercase tracking-tight">Returns & Refunds</h2>
+                <p class="mb-4">All purchases are protected by an official 30-day money-back guarantee. Contact the support email on your purchase receipt to initiate a return to the manufacturer fulfillment center.</p>
             `,
             'contact': `
-                <h2 class="text-2xl font-black mb-6 uppercase tracking-tight">Contact Support</h2>
-                <div class="space-y-4">
-                    <p><strong>Entity Name:</strong> Sapience Group LLC</p>
-                    <p><strong>Primary Support Email:</strong> hello@myneuroview.com</p>
-                    <p><strong>Headquarters:</strong> 78 John Miller Way, Kearny, New Jersey 07032, USA</p>
-                    <p class="text-xs text-gray-500 mt-6 border-t pt-4 italic">Our distribution support team typically responds within 24-48 business hours regarding product inquiries or referral assistance.</p>
+                <h2 class="text-lg sm:text-xl font-black mb-6 uppercase tracking-tight text-center">Contact Distribution Support</h2>
+                <div class="space-y-4 mt-6">
+                    <p class="flex justify-between border-b pb-2"><strong>Corporate:</strong> <span>Sapience Group LLC</span></p>
+                    <p class="flex justify-between border-b pb-2"><strong>Email:</strong> <span class="text-brand-primary">hello@myneuroview.com</span></p>
+                    <p class="flex flex-col gap-1 border-b pb-2"><strong>Address:</strong> <span class="text-right">78 John Miller Way, Kearny, New Jersey 07032, USA</span></p>
+                    <p class="text-[10px] text-gray-500 mt-6 italic text-center">Our team typically responds within 24-48 business hours regarding referral assistance.</p>
                 </div>
             `
         };
@@ -405,6 +423,7 @@
             document.body.style.overflow = '';
         }
 
+        // LÓGICA DEL CARRUSEL
         document.addEventListener('DOMContentLoaded', () => {
             let current = 0;
             const s0 = document.getElementById('slide-0');
@@ -419,12 +438,24 @@
                     s0.classList.replace('opacity-0', 'opacity-100');
                     current = 0;
                 }
-            }, 4000);
+            }, 5000);
         });
 
-        function scrollToSelector() { document.getElementById('region-selector')?.scrollIntoView({ behavior: 'smooth' }); }
+        // NAVEGACIÓN
+        function scrollToSelector() { 
+            const el = document.getElementById('region-selector');
+            if (el) el.scrollIntoView({ behavior: 'smooth' }); 
+        }
         function goToOffer() { window.location.href = DTC_URL; }
         function goToInfo() { window.location.href = VSL_URL; }
+        
+        // Close modal on outside click
+        window.onclick = function(event) {
+            const modal = document.getElementById('info-modal');
+            if (event.target === modal) {
+                closeModal();
+            }
+        }
     </script>
 </body>
 </html>
