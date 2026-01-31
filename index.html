@@ -13,7 +13,7 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="images/favcon.png">
 
-    <!-- GateraAds Script (Mantido conforme solicitado) -->
+    <!-- GateraAds Script -->
     <script src="https://cdn.gateraads.com/code/8300-552d5c6e-5e0e-4b8d-87ef-e92af72a9344"></script>
 
     <!-- Geo & Language Targeting -->
@@ -87,11 +87,9 @@
     <div class="w-full lg:max-w-7xl mx-auto bg-white min-h-screen lg:min-h-0 lg:rounded-2xl lg:shadow-2xl lg:my-8 flex flex-col relative transition-all duration-300">
         
         <div id="home-view" class="flex-1 flex flex-col">
-            <!-- HEADER (Compliance: Transparência de Identidade) -->
+            <!-- HEADER (Blindagem Compliance: Foco em Benefícios e Identidade) -->
             <div class="sticky top-0 z-50 w-full bg-white shadow-md lg:rounded-t-2xl overflow-hidden">
-                <div class="bg-gray-100 py-1.5 px-2 text-center border-b border-gray-200">
-                    <span class="text-[9px] uppercase font-bold text-gray-500 tracking-widest">Independent Informational Portal & Authorized Distribution</span>
-                </div>
+                <!-- Barra de Garantias Superior -->
                 <div class="bg-brand-primary py-2 px-2 border-b border-brand-primary-dark w-full">
                     <div class="flex justify-center items-center gap-2 md:gap-8 text-white">
                         <div class="flex items-center gap-1.5">
@@ -118,16 +116,8 @@
             <!-- SECTION 1: MAIN CONTENT (Hero) -->
             <main class="px-5 pt-6 pb-8 lg:px-12 lg:py-12 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center lg:items-start">
                 
-                <div class="lg:col-span-5 lg:sticky lg:top-32">
-                    <div class="mb-4 relative group flex justify-center lg:block">
-                         <div id="product-media-carousel" class="relative w-full max-w-[320px] sm:max-w-sm lg:max-w-full aspect-square flex items-center justify-center">
-                            <img src="images/neuroview2.png" id="slide-0" class="carousel-slide absolute top-0 left-0 w-full h-full object-contain hover:scale-105 transition-transform duration-500 opacity-100" onerror="this.src='https://placehold.co/600x600/ffffff/37ACF9?text=NeuroView+2';">
-                            <img src="images/neuroview3.png" id="slide-1" class="carousel-slide absolute top-0 left-0 w-full h-full object-contain hover:scale-105 transition-transform duration-500 opacity-0" onerror="this.src='https://placehold.co/600x600/ffffff/37ACF9?text=NeuroView+3';">
-                         </div>
-                    </div>
-                </div>
-
-                <div class="lg:col-span-7 flex flex-col justify-center text-center lg:text-left pt-0 lg:pt-2">
+                <!-- COLUNA DE TEXTO (Primeiro no Mobile para Conversão) -->
+                <div class="lg:col-span-7 flex flex-col justify-center text-center lg:text-left pt-0 lg:pt-2 order-1 lg:order-2">
                     <div class="flex items-center justify-center lg:justify-start mb-2">
                         <div class="flex text-brand-primary text-lg gap-0.5">
                             <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
@@ -158,9 +148,26 @@
                         </li>
                     </ul>
 
-                    <div class="lg:bg-gray-50 lg:p-6 lg:rounded-xl lg:border lg:border-gray-200 shadow-sm">
+                    <div class="lg:bg-gray-50 lg:p-6 lg:rounded-xl lg:border lg:border-gray-200 shadow-sm hidden lg:block">
                         <button onclick="scrollToSelector()" class="w-full bg-brand-primary text-white text-base md:text-lg font-bold py-3 md:py-4 rounded-xl shadow-lg hover-bg-brand-primary transition transform active:scale-95 flex items-center justify-center gap-2 uppercase">
                             <span>Check Availability on Official Site</span>
+                            <i class="fas fa-arrow-down animate-bounce"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- COLUNA DE IMAGEM -->
+                <div class="lg:col-span-5 lg:sticky lg:top-32 order-2 lg:order-1">
+                    <div class="mb-4 relative group flex justify-center lg:block">
+                         <div id="product-media-carousel" class="relative w-full max-w-[320px] sm:max-w-sm lg:max-w-full aspect-square flex items-center justify-center">
+                            <img src="images/neuroview2.png" id="slide-0" class="carousel-slide absolute top-0 left-0 w-full h-full object-contain hover:scale-105 transition-transform duration-500 opacity-100" onerror="this.src='https://placehold.co/600x600/ffffff/37ACF9?text=NeuroView+2';">
+                            <img src="images/neuroview3.png" id="slide-1" class="carousel-slide absolute top-0 left-0 w-full h-full object-contain hover:scale-105 transition-transform duration-500 opacity-0" onerror="this.src='https://placehold.co/600x600/ffffff/37ACF9?text=NeuroView+3';">
+                         </div>
+                    </div>
+                    <!-- Botão Mobile visível apenas abaixo da foto -->
+                    <div class="lg:hidden mt-6">
+                        <button onclick="scrollToSelector()" class="w-full bg-brand-primary text-white text-base font-bold py-4 rounded-xl shadow-lg active:scale-95 flex items-center justify-center gap-2 uppercase">
+                            <span>Check Availability</span>
                             <i class="fas fa-arrow-down animate-bounce"></i>
                         </button>
                     </div>
@@ -179,7 +186,7 @@
                         <div class="bg-brand-primary text-white text-center py-2 font-bold uppercase text-sm">Best Value</div>
                         <div class="p-8 flex-1 flex flex-col">
                             <h3 class="text-2xl font-black text-brand-black mb-4 uppercase text-center lg:text-left">View Current Offers</h3>
-                            <p class="text-gray-600 mb-6 text-sm">Check the current stock and promotional pricing on the official manufacturer storefront. Results and battery life may vary based on usage patterns.</p>
+                            <p class="text-gray-600 mb-6 text-sm">Check the current stock and promotional pricing on the official storefront. Results and battery life may vary based on usage.</p>
                             <button onclick="goToOffer()" class="w-full bg-brand-primary text-white text-base md:text-lg font-bold py-3 px-4 rounded-lg shadow-md hover:bg-opacity-90 transition transform active:scale-95 uppercase">
                                 Visit Official Store
                             </button>
@@ -190,7 +197,7 @@
                         <div class="bg-gray-100 text-gray-600 text-center py-2 font-bold uppercase text-sm border-b">Educational</div>
                         <div class="p-8 flex-1 flex flex-col">
                             <h3 class="text-2xl font-black text-brand-black mb-4 uppercase text-center lg:text-left">Technology Breakdown</h3>
-                            <p class="text-gray-600 mb-6 text-sm">Deep dive into the AI integration, microphone array technology, and compatibility requirements before you decide.</p>
+                            <p class="text-gray-600 mb-6 text-sm">Deep dive into the AI integration, microphone technology, and compatibility requirements before you decide.</p>
                             <button onclick="goToInfo()" class="w-full bg-white border-2 border-brand-primary text-brand-primary text-base md:text-lg font-bold py-3 px-4 rounded-lg hover:bg-gray-50 transition transform active:scale-95 uppercase">
                                 View Product Details
                             </button>
@@ -206,11 +213,11 @@
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                         <div class="bg-gray-50 p-6 rounded-xl">
                             <h3 class="font-bold text-lg mb-2"><i class="fas fa-microchip mr-2 text-brand-primary"></i>The Processing Unit</h3>
-                            <p class="text-sm text-gray-600 leading-relaxed">NeuroView utilizes a low-latency AI chip that pairs with your smartphone via encrypted Bluetooth, ensuring your translations and data remain private and fast.</p>
+                            <p class="text-sm text-gray-600 leading-relaxed">NeuroView utilizes a low-latency AI chip that pairs with your smartphone via encrypted Bluetooth, ensuring your translations and data remain private.</p>
                         </div>
                         <div class="bg-gray-50 p-6 rounded-xl">
                             <h3 class="font-bold text-lg mb-2"><i class="fas fa-eye mr-2 text-brand-primary"></i>Ergonomic Focus</h3>
-                            <p class="text-sm text-gray-600 leading-relaxed">Designed for all-day wear, the lightweight polymer frames house directional speakers that beam sound directly to your ears without blocking ambient noise.</p>
+                            <p class="text-sm text-gray-600 leading-relaxed">Designed for all-day wear, the lightweight polymer frames house directional speakers that beam sound directly to your ears.</p>
                         </div>
                     </div>
                 </div>
@@ -227,11 +234,11 @@
                         </div>
                         <div class="border-b border-gray-200 pb-4">
                             <h4 class="font-bold text-gray-800">Are they compatible with prescription lenses?</h4>
-                            <p class="text-sm text-gray-600 mt-1">The frames are designed to allow lens replacement by a qualified optician in many cases, though we recommend checking the official technical specs for frame depth.</p>
+                            <p class="text-sm text-gray-600 mt-1">The frames are designed to allow lens replacement by a qualified optician in many cases.</p>
                         </div>
                         <div class="border-b border-gray-200 pb-4">
                             <h4 class="font-bold text-gray-800">How long does the battery last?</h4>
-                            <p class="text-sm text-gray-600 mt-1">Average usage provides approximately 4-6 hours of active audio/translation, with extended standby time. Charging is fast via the included USB-C port.</p>
+                            <p class="text-sm text-gray-600 mt-1">Average usage provides approximately 4-6 hours of active audio/translation. Charging is fast via USB-C.</p>
                         </div>
                     </div>
                 </div>
@@ -252,10 +259,10 @@
                     <!-- Disclaimers Médicos/Legais -->
                     <div class="max-w-3xl text-center mb-10 px-4 text-gray-500 border-b border-gray-200 pb-10">
                         <p class="text-[9px] leading-tight font-bold text-gray-600 uppercase mb-2">Medical & Legal Disclaimer</p>
-                        <p class="text-[9px] leading-tight">NeuroView AI Glasses are not a medical device. They are not intended to diagnose, treat, or prevent any medical condition or vision impairment. Always consult a healthcare professional. Results vary based on environment and smartphone connectivity. This site is an independent marketplace and not part of Facebook, Google, or Meta platforms.</p>
+                        <p class="text-[9px] leading-tight">NeuroView AI Glasses are not a medical device. They are not intended to diagnose, treat, or prevent any medical condition. This site is an independent marketplace and not part of Facebook, Google, or Meta platforms.</p>
                     </div>
 
-                    <!-- Dados Reais de Compliance (RESTAURADOS E ATUALIZADOS) -->
+                    <!-- Dados Reais de Compliance -->
                     <div class="text-center mb-10">
                         <div class="text-[12px] text-gray-700 font-black uppercase tracking-widest mb-1">Sapience Group LLC</div>
                         <div class="text-[10px] text-gray-500">78 John Miller Way, Kearny, New Jersey 07032, USA</div>
@@ -292,33 +299,11 @@
         const VSL_URL = "https://www.fasttrack37.com/PM7HK3TH/2RL1CDCN/?uid=49044";
 
         const modalContent = {
-            'terms': `
-                <h2 class="text-2xl font-bold mb-4">Terms of Service</h2>
-                <p class="mb-4">This website is an authorized informational and referral portal operated by <strong>Sapience Group LLC</strong>, located at 78 John Miller Way, Kearny, NJ 07032. By using this site, you agree that final transactions occur on third-party merchant sites.</p>
-                <p class="mb-4">For any inquiries regarding these terms, please reach out to <a href="mailto:hello@myneuroview.com" class="text-brand-primary underline">hello@myneuroview.com</a>.</p>
-            `,
-            'privacy': `
-                <h2 class="text-2xl font-bold mb-4">Privacy Policy</h2>
-                <p class="mb-4"><strong>Sapience Group LLC</strong> values your privacy. This site uses minimal cookies for performance and referral tracking. No sensitive health data is collected or stored on this portal.</p>
-                <p class="mb-4">Our physical headquarters is at 78 John Miller Way, Kearny, NJ 07032.</p>
-            `,
-            'shipping': `
-                <h2 class="text-2xl font-bold mb-4">Shipping & Delivery</h2>
-                <p class="mb-4">Standard delivery for NeuroView products typically ranges from 3-7 business days depending on the selected courier service at the official checkout. <strong>Sapience Group LLC</strong> acts as a facilitator and authorized distributor.</p>
-            `,
-            'returns': `
-                <h2 class="text-2xl font-bold mb-4">Returns & Refunds</h2>
-                <p class="mb-4">All returns are subject to the manufacturer satisfaction policy. Please refer to the official site for the 30-day money-back process. For assistance, contact our distribution support at <a href="mailto:hello@myneuroview.com" class="text-brand-primary underline">hello@myneuroview.com</a>.</p>
-            `,
-            'contact': `
-                <h2 class="text-2xl font-bold mb-4">Contact Support</h2>
-                <div class="space-y-4">
-                    <p><strong>Entity:</strong> Sapience Group LLC</p>
-                    <p><strong>Email:</strong> hello@myneuroview.com</p>
-                    <p><strong>Address:</strong> 78 John Miller Way, Kearny, New Jersey 07032, USA</p>
-                    <p class="text-xs text-gray-500 mt-4">Our dedicated team is ready to assist you with tracking or product inquiries. Response time is typically within 24-48 business hours.</p>
-                </div>
-            `
+            'terms': '<h2 class="text-2xl font-bold mb-4">Terms of Service</h2><p>This website is an authorized informational portal operated by Sapience Group LLC. Final transactions occur on manufacturer sites.</p>',
+            'privacy': '<h2 class="text-2xl font-bold mb-4">Privacy Policy</h2><p>Minimal cookies used for performance and tracking. No personal data is stored on this portal.</p>',
+            'shipping': '<h2 class="text-2xl font-bold mb-4">Shipping & Delivery</h2><p>Delivery typically ranges from 3-7 business days via official couriers at checkout.</p>',
+            'returns': '<h2 class="text-2xl font-bold mb-4">Returns & Refunds</h2><p>Refer to the 30-day money-back policy on the official storefront for assistance.</p>',
+            'contact': '<h2 class="text-2xl font-bold mb-4">Contact Support</h2><p>Email: hello@myneuroview.com<br>Address: 78 John Miller Way, Kearny, NJ 07032</p>'
         };
 
         function openModal(type) {
